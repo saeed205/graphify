@@ -505,6 +505,7 @@ These are only needed for **headless / CI extraction** (`graphify extract`). Whe
 | `ANTHROPIC_API_KEY` | Claude (Anthropic) backend | `--backend claude` |
 | `ANTHROPIC_BASE_URL` | Anthropic-compatible endpoint URL (LiteLLM proxy, gateways, ...) | `--backend claude` (default: `https://api.anthropic.com`) |
 | `ANTHROPIC_MODEL` | Model name for the Claude backend — for custom endpoints, use the model name/alias your server exposes | `--backend claude` (default: `claude-sonnet-4-6`) |
+| `GRAPHIFY_CLAUDE_CLI_MODEL` | Model for the Claude Code CLI backend — `haiku`, `sonnet`, or a full model ID such as `claude-haiku-4-5-20251001`. When unset, graphify passes no `--model` and the CLI's own default applies (Opus), which is more than community naming needs | `--backend claude-cli` (optional — `haiku` is usually enough for `label` / `cluster-only`) |
 | `GEMINI_API_KEY` or `GOOGLE_API_KEY` | Google Gemini backend | `--backend gemini` |
 | `OPENAI_API_KEY` | OpenAI or OpenAI-compatible APIs | `--backend openai` (local servers accept any non-empty value) |
 | `OPENAI_BASE_URL` | OpenAI-compatible server URL (llama.cpp, vLLM, LM Studio, ...) | `--backend openai` (default: `https://api.openai.com/v1`) |
